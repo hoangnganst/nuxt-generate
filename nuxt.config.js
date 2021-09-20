@@ -36,6 +36,6 @@ export default {
   build: {},
   target: "static",
   router: {
-    base: "/nuxt-generate"
+    base: "/nuxt-generate/"
   }
 };
