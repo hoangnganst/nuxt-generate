@@ -10,6 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "ant-design-vue": "^1.7.8",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7"
   },
