@@ -6,7 +6,6 @@ const getters = {
 };
 const actions = {
   async addHistory({ commit }, formular) {
-    console.log(formular);
     commit("NEW_HISTORY", formular);
   },
   async deleteHistory({ commit }) {

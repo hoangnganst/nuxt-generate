@@ -74,8 +74,6 @@ export default {
       }
     },
     handleOperators(value) {
-      console.log(this);
-
       if (!this.currentVal.includes("Limit")) {
         const { formula, prevVal, evaluated } = this;
         this.currentVal = value;
@@ -84,7 +82,6 @@ export default {
           this.formula = prevVal + value;
         } else if (!endsWithOperator.test(formula)) {
           this.prevVal = formula;
-          console.log(123);
           this.formula = formula + value;
         } else if (!endsWithNegativeSign.test(formula)) {
           this.formula =
@@ -198,7 +195,6 @@ export default {
       }
     },
     handleGetHistory() {
-      console.log(this);
       if (this.history.length > 0) {
         this.formula = this.history[this.historyIndex].formula;
         this.prevVal = this.history[this.historyIndex].answer;
